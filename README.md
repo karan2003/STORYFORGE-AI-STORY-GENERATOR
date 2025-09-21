@@ -1,17 +1,11 @@
-# STORYFORGE AI : STORY GENERATOR
-The AI Storyteller is an ambitious project that combines cutting-edge technologies to create captivating and immersive stories
 
-***
 
-***
+# STORYFORGE: AI Story Generator
 
-**AI Story Generator STORYFORGE** is a cutting-edge platform merging advanced Artificial Intelligence with the creative process of storytelling. The system empowers anyone to turn simple prompts into immersive video stories—combining natural language generation, visual synthesis, and neural TTS into a fully-animated, multimedia experience.[9]
 
-***
+![Example output generated with the default prompt.](https://user-images.githubusercontent.com/25360440/210071764-51ed5872-ba56-4ed0-919b-d9ce
 
-## Abstract
-
-AI Story Generator STORYFORGE democratizes the creation of digital narratives, allowing anyone to craft and share rich stories built from AI-generated text, images, and narration. With a GPT-based model for text, Stable Diffusion for visuals, and state-of-the-art neural TTS for audio, users can produce custom video stories without special technical or artistic expertise. Designed for scalability, usability, and creativity, the platform breaks traditional barriers to storytelling and ushers in a new, accessible era of digital narrative creation.[9]
+**AI Story Generator STORYFORGE** democratizes digital storytelling, letting anyone craft and share immersive narratives from simple text prompts. Combining state-of-the-art language, vision, and speech models, STORYFORGE allows production of animated video stories without technical or artistic expertise. Designed for customizability, scale, and creativity, STORYFORGE redefines the boundaries of storytelling.[1]
 
 ***
 
@@ -22,6 +16,7 @@ AI Story Generator STORYFORGE democratizes the creation of digital narratives, a
 - [System Architecture & Workflow](#system-architecture--workflow)
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Quickstart](#quickstart)
 - [Usage](#usage)
 - [Command-Line Options](#command-line-options)
 - [Implementation](#implementation)
@@ -29,25 +24,26 @@ AI Story Generator STORYFORGE democratizes the creation of digital narratives, a
 - [Conclusion](#conclusion)
 - [Future Scope](#future-scope)
 - [References](#references)
+- [License](#license)
 
 ***
 
 ## Project Background
 
-The AI Story Generator STORYFORGE addresses the demand for multi-sensory digital storytelling by unifying text, image, and audio creation. Traditional storytelling is limited by the need for writers, illustrators, and voice actors; this project removes those barriers using AI, making dynamic digital storytelling accessible to all and opening new creative possibilities for education, entertainment, and content creation.[9]
+**STORYFORGE AI Story Generator** addresses the challenge of end-to-end, accessible digital storytelling by automating the creation of narrative, illustration, and audio narration using AI. Traditional barriers like artistic or technical expertise are removed; the platform democratizes creative expression in education, entertainment, research, and more.
 
 ***
 
 ## Key Features
 
-- **Automated Story Generation:** Uses a GPT-based LLM to write creative stories from user prompts.
-- **Dynamic Visual Illustration:** Stable Diffusion generates detailed images for each story scene.
-- **AI-Powered Narration:** Neural TTS produces lifelike voiceovers, adding realism and emotion.
-- **Fully Animated Video Output:** All media are assembled into a cohesive video with subtitles.
-- **Customizable & User-Friendly:** Users control style, mood, pacing, and export options.
-- **Accessibility:** No special skills required; stories are saved with images, audio, and subtitles for easy sharing.
-- **Collaborative Options:** Supports multi-user collaborative storytelling (future enhancement).
-- **Real-Time Feedback:** Provides suggestions and feedback to users for more engaging stories.[9]
+- **Automated Story Generation:** GPT-based LLM composes creative narratives.
+- **Dynamic Visual Illustration:** Stable Diffusion generates detailed images per scene.
+- **AI-Powered Narration:** Neural TTS produces lifelike, synchronized voiceover.
+- **Fully Animated Video Output:** Seamlessly assembles audio, images, and text.
+- **Customizable Parameters:** Set mood, style, speed, and more via rich CLI options.
+- **Real-Time Feedback:** Get suggestions for enhancing engagement.
+- **Collaborative Storytelling:** Planned support for multi-user input and editing.
+- **Accessibility:** Simple, CLI-driven operation—no special skills needed.[1]
 
 ***
 
@@ -72,63 +68,112 @@ The AI Story Generator STORYFORGE addresses the demand for multi-sensory digital
 [Final Video Output: Images + Audio + Subtitles]
 ```
 
-1. **Input**: User provides a prompt.
-2. **Story Generation**: GPT crafts the narrative, segmented per scene.
-3. **Image Synthesis**: Stable Diffusion generates a context image for each scene.
-4. **Narration**: Neural TTS generates spoken audio for each scene.
-5. **Assembly**: Text, images, and audio merged into a video (with subtitles).
-6. **Output**: Downloadable video, with intermediate images/audio files for editing or sharing.[9]
-
 ***
 
 ## Requirements
 
 ### Hardware
 
-- **Processor**: Quad-core (Intel i5 or equivalent recommended)
-- **RAM**: 8 GB or higher recommended
-- **Storage**: SSD for fastest processing
-- **Graphics**: Dedicated GPU (NVIDIA GTX 1050+ or AMD equivalent)
-- **Others**: Full HD display, stable internet, basic peripherals
+- **Processor:** Quad-core (Intel i5 or equivalent), 8GB+ RAM, SSD, dedicated GPU recommended (NVIDIA GTX 1050+ or AMD equivalent)
+- **Display/Peripherals:** FHD display, stable internet
 
 ### Software
 
-- **OS**: Windows 10+, macOS High Sierra+, or Linux (e.g., Ubuntu)
-- **Python**: 3.7+ (3.8+ recommended)
-- **Core Libraries**: PyTorch, Transformers, Stable Diffusion, Neural TTS, NumPy, SciPy, Pandas, OpenCV, Pillow, FFmpeg, Git, Jupyter Notebook, MySQL/PostgreSQL (optional)
+- **OS:** Windows 10+, macOS High Sierra+, Linux
+- **Python:** 3.7+ (3.8+ recommended)
+- **Core Libraries:** PyTorch, Hugging Face Transformers, Stable Diffusion, Neural TTS, NumPy, SciPy, Pandas, OpenCV, Pillow, FFmpeg, Git, Jupyter Notebook
 
 ***
 
 ## Installation
 
-```bash
-# Create and activate virtual environment
-py -m venv myvenv
-./myvenv/scripts/activate
-# Install core package
+**PyPI (recommended for most users):**
+```
 pip install storyteller-core
-# Navigate to directory
+```
+
+**From Source:**
+```
+git clone https://github.com/jaketae/storyteller.git
 cd storyteller
-# Install dependencies
 pip install .
+```
+
+**Apple Silicon users:**  
+You must [install mecab](https://github.com/SamuraiT/mecab-python3) first:  
+```
+brew install mecab
+```
+Then proceed with the regular installation.
+
+**For development:**
+```
+pip install -e .[dev]
+pre-commit install
+```
+
+***
+
+## Quickstart
+
+Run a demo using the CLI:
+```
+storyteller
+```
+This uses the default prompt: `Once upon a time, unicorns roamed the Earth.`  
+Customize your story:
+```
+storyteller --writer_prompt "The ravenous cat, driven by an insatiable craving for tuna, devised a daring plan to break into the local fish market's coveted tuna reserve."
+```
+The final video will be saved in `out/out.mp4` along with images, audio, and subtitles.
+
+To see all available CLI options:
+```
+storyteller --help
 ```
 
 ***
 
 ## Usage
 
-The `storyteller` CLI offers comprehensive options.
+### Command Line Interface
 
-### Example Command:
+**For CUDA (GPU):**
+```
+storyteller --writer_device cuda --painter_device cuda
+```
+**Split across multiple GPUs:**
+```
+storyteller --writer_device cuda:0 --painter_device cuda:1
+```
+**Use half-precision for faster generation:**
+```
+storyteller --writer_device cuda --painter_device cuda --writer_dtype float16 --painter_dtype float16
+```
 
-```bash
-storyteller --writer_prompt "Once upon a time, unicorns roamed the Earth." \
-  --writer_device cpu \
-  --painter_device cuda:0 \
-  --painter_prompt_prefix "Beautiful painting" \
-  --num_images 5 \
-  --enable_attention_slicing true \
-  --speaker "tts_models/en/ljspeech/hifi-gan"
+**Apple Silicon (MPS):**
+```
+storyteller --writer_device mps --painter_device mps
+storyteller --enable_attention_slicing true
+```
+
+### Python API
+
+```python
+from storyteller import StoryTeller
+story_teller = StoryTeller.from_default()
+story_teller.generate(...)
+```
+Or configure with custom settings:
+```python
+from storyteller import StoryTeller, StoryTellerConfig
+config = StoryTellerConfig(
+    writer="gpt2-large",
+    painter="CompVis/stable-diffusion-v1-4",
+    max_new_tokens=100,
+)
+story_teller = StoryTeller(config)
+story_teller.generate(...)
 ```
 
 ***
@@ -157,53 +202,52 @@ storyteller --writer_prompt "Once upon a time, unicorns roamed the Earth." \
 
 ## Implementation
 
-The codebase is organized for modularity and maintainability:
-
-- **Initialization**: Provides a unified API via storyteller-core.
-- **Config**: Uses dataclasses for configuration management and validation.
-- **Text/Image/Audio Generation**: Efficient pipeline using PyTorch and model-specific optimizations.
-- **Assembly**: Automated use of FFmpeg and OpenCV to merge results.
-- **Customization**: Supports CLI arguments for maximum flexibility.[9]
+- Unified API via `storyteller-core`
+- Modular configuration and scene assembly (text, image, audio pipelines)
+- Automated merging via FFmpeg, OpenCV
+- Supports comprehensive CLI customization and Python API for advanced workflows.[1]
 
 ***
 
 ## Results
 
-- Stories are generated scene-by-scene, each with unique illustration and narration.
-- Final output is a cohesive, fully-animated video.
-- All intermediate assets (audio, image, subtitles) saved for review or editing.
+- Scene-by-scene narrative, illustration, and narration
+- Animated, fully-voiced video ready for sharing or further editing
+- All intermediate media files accessible in output directory
 
 ***
 
 ## Conclusion
 
-The AI Story Generator STORYFORGE proves the viability and creative power of merging AI with storytelling. This project has demonstrated the effective synthesis of text, visuals, and narration—offering users a seamless way to produce engaging multimedia stories and opening pathways to new creative applications in education, writing, and entertainment.[9]
+**AI Story Generator STORYFORGE** transforms accessible, collaborative, and dynamic storytelling using generative AI. It opens new possibilities for digital learning, entertainment, and creative arts for all users.[1]
 
 ***
 
 ## Future Scope
 
-- **Coherence & Context**: Improving narrative consistency and context awareness.
-- **Domain Expansion**: Support for more genres, styles, educational and professional use.
-- **Personalization**: Interactive, user-driven parameters and real-time feedback.
-- **Collaboration**: Multi-user collaboration tools.
-- **Evaluation**: Development of story quality metrics and feedback systems.
-- **Deployment**: Extensions for web, mobile, education, and integration with other platforms.[9]
+- Improved narrative coherence and context
+- Expanded support for genres and use-cases
+- Personalized generation, real-time feedback
+- Collaboration features and web/mobile integration
+- Quality metrics and intelligent editing tools[1]
 
 ***
 
 ## References
 
-- AI Story Generator STORYFORGE official report (SSIT, 2023-24).[9]
-- OpenAI GPT, Stable Diffusion, Coqui TTS documentation.
-- Community benchmarks and sample projects: GRANNY-GPT2, Auto-Story-GPT, Image2Story.
+- AI Story Generator STORYFORGE official report (SSIT, 2023-24)
+- OpenAI GPT, Stable Diffusion, Coqui TTS documentation
+- Example projects: GRANNY-GPT2, Auto-Story-GPT, Image2Story
 
 ***
 
-**Keywords:** Generative AI, Storytelling, GPT, Stable Diffusion, Neural TTS, NLP, Deep Learning, PyTorch, Transformers, FFmpeg, Multimedia Synthesis, Text-to-Image, Creative Computing, Collaboration, Accessibility, Education, Open Source.[9]
+## License
+
+Released under the [MIT License](LICENSE).
 
 ***
 
 **Keywords:** Generative AI, Storytelling, GPT, Stable Diffusion, Neural TTS, NLP, Deep Learning, PyTorch, Transformers, FFmpeg, Multimedia Synthesis, Text-to-Image, Creative Computing, Collaboration, Accessibility, Education, Open Source.
 
 ***
+
