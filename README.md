@@ -2,7 +2,10 @@
 
 # STORYFORGE: AI Story Generator
 
-**AI Story Generator STORYFORGE** democratizes digital storytelling, letting anyone craft and share immersive narratives from simple text prompts. Combining state-of-the-art language, vision, and speech models, STORYFORGE allows production of animated video stories without technical or artistic expertise. Designed for customizability, scale, and creativity, STORYFORGE redefines the boundaries of storytelling.[1]
+**AI Story Generator STORYFORGE** democratizes digital storytelling, letting anyone craft and share immersive narratives from simple text prompts. Combining state-of-the-art language, vision, and speech models, STORYFORGE allows production of animated video stories without technical or artistic expertise. Designed for customizability, scale, and creativity, STORYFORGE redefines the boundaries of storytelling.
+
+<img id="default-output" src="https://user-images.githubusercontent.com/25360440/210071764-51ed5872-ba56-4ed0-919b-d9ce65110185.gif" alt="Example output generated with the default prompt.">
+
 
 ***
 
