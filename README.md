@@ -3,10 +3,6 @@ The AI Storyteller is an ambitious project that combines cutting-edge technologi
 
 ***
 
-# STORYFORGE AI:STORY_GENERATOR
-
-The AI Storyteller is an ambitious project that combines cutting-edge technologies to create captivating and immersive stories.
-
 ***
 
 **AI Story Generator STORYFORGE** is a cutting-edge platform merging advanced Artificial Intelligence with the creative process of storytelling. The system empowers anyone to turn simple prompts into immersive video stories—combining natural language generation, visual synthesis, and neural TTS into a fully-animated, multimedia experience.[9]
