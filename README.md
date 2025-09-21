@@ -1,15 +1,21 @@
-# STORYFORGE AI:STORY_GENERATOR
+# STORYFORGE AI : STORY GENERATOR
 The AI Storyteller is an ambitious project that combines cutting-edge technologies to create captivating and immersive stories
 
 ***
 
-**AI Story Generator** is a cutting-edge platform merging advanced Artificial Intelligence with the creative process of storytelling. The system empowers anyone to turn simple prompts into immersive video stories—combining natural language generation, visual synthesis, and neural TTS into a fully-animated, multimedia experience.
+# STORYFORGE AI:STORY_GENERATOR
+
+The AI Storyteller is an ambitious project that combines cutting-edge technologies to create captivating and immersive stories.
+
+***
+
+**AI Story Generator STORYFORGE** is a cutting-edge platform merging advanced Artificial Intelligence with the creative process of storytelling. The system empowers anyone to turn simple prompts into immersive video stories—combining natural language generation, visual synthesis, and neural TTS into a fully-animated, multimedia experience.[9]
 
 ***
 
 ## Abstract
 
-AI Story Generator democratizes the creation of digital narratives, allowing anyone to craft and share rich stories built from AI-generated text, images, and narration. With a GPT-based model for text, Stable Diffusion for visuals, and state-of-the-art neural TTS for audio, users can produce custom video stories without special technical or artistic expertise. Designed for scalability, usability, and creativity, the platform breaks traditional barriers to storytelling and ushers in a new, accessible era of digital narrative creation.[1]
+AI Story Generator STORYFORGE democratizes the creation of digital narratives, allowing anyone to craft and share rich stories built from AI-generated text, images, and narration. With a GPT-based model for text, Stable Diffusion for visuals, and state-of-the-art neural TTS for audio, users can produce custom video stories without special technical or artistic expertise. Designed for scalability, usability, and creativity, the platform breaks traditional barriers to storytelling and ushers in a new, accessible era of digital narrative creation.[9]
 
 ***
 
@@ -32,7 +38,7 @@ AI Story Generator democratizes the creation of digital narratives, allowing any
 
 ## Project Background
 
-The AI Story Generator addresses the demand for multi-sensory digital storytelling by unifying text, image, and audio creation. Traditional storytelling is limited by the need for writers, illustrators, and voice actors; this project removes those barriers using AI, making dynamic digital storytelling accessible to all and opening new creative possibilities for education, entertainment, and content creation.[1]
+The AI Story Generator STORYFORGE addresses the demand for multi-sensory digital storytelling by unifying text, image, and audio creation. Traditional storytelling is limited by the need for writers, illustrators, and voice actors; this project removes those barriers using AI, making dynamic digital storytelling accessible to all and opening new creative possibilities for education, entertainment, and content creation.[9]
 
 ***
 
@@ -45,7 +51,7 @@ The AI Story Generator addresses the demand for multi-sensory digital storytelli
 - **Customizable & User-Friendly:** Users control style, mood, pacing, and export options.
 - **Accessibility:** No special skills required; stories are saved with images, audio, and subtitles for easy sharing.
 - **Collaborative Options:** Supports multi-user collaborative storytelling (future enhancement).
-- **Real-Time Feedback:** Provides suggestions and feedback to users for more engaging stories.[1]
+- **Real-Time Feedback:** Provides suggestions and feedback to users for more engaging stories.[9]
 
 ***
 
@@ -75,7 +81,7 @@ The AI Story Generator addresses the demand for multi-sensory digital storytelli
 3. **Image Synthesis**: Stable Diffusion generates a context image for each scene.
 4. **Narration**: Neural TTS generates spoken audio for each scene.
 5. **Assembly**: Text, images, and audio merged into a video (with subtitles).
-6. **Output**: Downloadable video, with intermediate images/audio files for editing or sharing.[1]
+6. **Output**: Downloadable video, with intermediate images/audio files for editing or sharing.[9]
 
 ***
 
@@ -103,13 +109,10 @@ The AI Story Generator addresses the demand for multi-sensory digital storytelli
 # Create and activate virtual environment
 py -m venv myvenv
 ./myvenv/scripts/activate
-
 # Install core package
 pip install storyteller-core
-
 # Navigate to directory
 cd storyteller
-
 # Install dependencies
 pip install .
 ```
@@ -164,7 +167,7 @@ The codebase is organized for modularity and maintainability:
 - **Config**: Uses dataclasses for configuration management and validation.
 - **Text/Image/Audio Generation**: Efficient pipeline using PyTorch and model-specific optimizations.
 - **Assembly**: Automated use of FFmpeg and OpenCV to merge results.
-- **Customization**: Supports CLI arguments for maximum flexibility.[1]
+- **Customization**: Supports CLI arguments for maximum flexibility.[9]
 
 ***
 
@@ -178,7 +181,7 @@ The codebase is organized for modularity and maintainability:
 
 ## Conclusion
 
-The AI Story Generator proves the viability and creative power of merging AI with storytelling. This project has demonstrated the effective synthesis of text, visuals, and narration—offering users a seamless way to produce engaging multimedia stories and opening pathways to new creative applications in education, writing, and entertainment.[1]
+The AI Story Generator STORYFORGE proves the viability and creative power of merging AI with storytelling. This project has demonstrated the effective synthesis of text, visuals, and narration—offering users a seamless way to produce engaging multimedia stories and opening pathways to new creative applications in education, writing, and entertainment.[9]
 
 ***
 
@@ -189,15 +192,19 @@ The AI Story Generator proves the viability and creative power of merging AI wit
 - **Personalization**: Interactive, user-driven parameters and real-time feedback.
 - **Collaboration**: Multi-user collaboration tools.
 - **Evaluation**: Development of story quality metrics and feedback systems.
-- **Deployment**: Extensions for web, mobile, education, and integration with other platforms.[1]
+- **Deployment**: Extensions for web, mobile, education, and integration with other platforms.[9]
 
 ***
 
 ## References
 
-- AI Story Generator official report (SSIT, 2023-24).
+- AI Story Generator STORYFORGE official report (SSIT, 2023-24).[9]
 - OpenAI GPT, Stable Diffusion, Coqui TTS documentation.
 - Community benchmarks and sample projects: GRANNY-GPT2, Auto-Story-GPT, Image2Story.
+
+***
+
+**Keywords:** Generative AI, Storytelling, GPT, Stable Diffusion, Neural TTS, NLP, Deep Learning, PyTorch, Transformers, FFmpeg, Multimedia Synthesis, Text-to-Image, Creative Computing, Collaboration, Accessibility, Education, Open Source.[9]
 
 ***
 
