@@ -94,8 +94,8 @@ pip install storyteller-core
 
 **From Source:**
 ```
-git clone https://github.com/jaketae/storyteller.git
-cd storyteller
+git clone https://github.com/karan2003/STORYFORGE-AI-STORY-GENERATOR.git
+cd STORYFORGE-AI-STORY-GENERATOR
 pip install .
 ```
 
@@ -247,7 +247,7 @@ Released under the [MIT License](LICENSE).
 
 ***
 
-**Keywords:** Generative AI, Storytelling, GPT, Stable Diffusion, Neural TTS, NLP, Deep Learning, PyTorch, Transformers, FFmpeg, Multimedia Synthesis, Text-to-Image, Creative Computing, Collaboration, Accessibility, Education, Open Source.
+**Keywords:** Agemtic AI, Generative AI, Storytelling, GPT, Stable Diffusion, Neural TTS, NLP, Deep Learning, PyTorch, Transformers, FFmpeg, Multimedia Synthesis, Text-to-Image, Creative Computing, Collaboration, Accessibility, Education, Open Source.
 
 ***
 
