@@ -1,4 +1,4 @@
-# AI_STORY_GENERATOR
+# STORYFORGE AI:STORY_GENERATOR
 The AI Storyteller is an ambitious project that combines cutting-edge technologies to create captivating and immersive stories
 
 ***
@@ -195,7 +195,7 @@ The AI Story Generator proves the viability and creative power of merging AI wit
 
 ## References
 
-- AI Story Generator official report (SSIT, 2023-24).[1]
+- AI Story Generator official report (SSIT, 2023-24).
 - OpenAI GPT, Stable Diffusion, Coqui TTS documentation.
 - Community benchmarks and sample projects: GRANNY-GPT2, Auto-Story-GPT, Image2Story.
 
@@ -204,7 +204,3 @@ The AI Story Generator proves the viability and creative power of merging AI wit
 **Keywords:** Generative AI, Storytelling, GPT, Stable Diffusion, Neural TTS, NLP, Deep Learning, PyTorch, Transformers, FFmpeg, Multimedia Synthesis, Text-to-Image, Creative Computing, Collaboration, Accessibility, Education, Open Source.
 
 ***
-
-This version offers context, usability information, and technical detail for users, contributors, and educators alike.[1]
-
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/90391685/8ed6507d-f26d-4163-a8f3-ccad088b19db/AI-STORY-GENERATOR-REPORT-Final-1.pdf)
